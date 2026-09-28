@@ -568,7 +568,7 @@ Header names are validated, canonicalized, and de-duplicated. The admin security
 
 **⚠️ Security Warning: HTTP URL Configuration**
 
-When `security.url_allowlist.enabled=false`, the system performs minimal URL validation. HTTPS-only upstream URLs and public hosts are the default in the Docker Compose example; for local development, explicitly opt in to HTTP or private hosts. For production, keep both settings disabled:
+When `security.url_allowlist.enabled=false`, the system performs minimal URL validation. HTTPS-only upstream URLs and public hosts are the default in the application and Docker Compose example; for local development, explicitly opt in to HTTP or private hosts. For production, keep both settings disabled:
 
 ```yaml
 security:
